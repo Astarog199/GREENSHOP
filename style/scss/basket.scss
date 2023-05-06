@@ -1,0 +1,93 @@
+// стили корзины
+
+.cartIconWrap {
+    position: relative;
+    cursor: pointer;
+}
+
+.cartIconWrap span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background: #f16d7f;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    right: -8px;
+    top: -19px;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.rightHeader {
+    position: relative;
+}
+
+.basket {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 37px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 340px) {
+    .basket {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 552px) {
+    .basket {
+        width: 600px;
+    }
+}
+
+.basketRow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+}
+
+.basketHeader {
+    font-weight: bold;
+}
+
+.basketTotal {
+    font-weight: bold;
+    text-align: right;
+}
+
+.basket-pictures {
+    width: 70px;
+    height: 70px;
+}
+
+.shopping_counter{
+
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    color: white;
+    background-color: #46A358;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    right: 125px;
+    top: 0px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+}

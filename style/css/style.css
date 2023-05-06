@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url(../css/Heder.css);
+@import url(../css/Footer.css);
+@import url(../css/basket.css);
+@import url(../css/main_page.css);
+@import url(../css/fonts.css);
+@import url(../css/slider.css);
+@import url(../css/banner.css);
+/*  обнуление стилей */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------------------------------ */
+/*  распределение блоков страницы по вертикали */
+html,
+body {
+  height: 100%;
+}
+html .container,
+body .container {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html .content,
+body .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+/* ------------------------------------------------ */
+.indent {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+/*  шаблоны */
+.back {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  position: fixed;
+  background: var(--vkui--color_overlay_primary, rgba(0, 0, 0, 0.48));
+}
+
+.container_login {
+  outline: none;
+  z-index: 10000;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

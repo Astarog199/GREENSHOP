@@ -1,0 +1,131 @@
+/*  подвал */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 625px;
+    width: 100%;
+
+}
+
+.wrapped_footer {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+
+.block_footer_1 {
+    display: flex;
+    justify-content: space-between;
+    background: #FBFBFB;
+    padding: 25px;
+
+    .block_fot_item {
+        display: flex;
+        flex-direction: column;
+        width: 205px;
+        height: 200px;
+
+        .img_fot {
+            width: 68px;
+            height: 87px;
+        }
+    }
+}
+
+.bf1_parahraph {
+    color: #727272;
+    margin-top: 10px;
+}
+
+.bf2_parahraph {
+    color: #727272;
+    margin-top: 20px;
+}
+
+.block_footer_2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    height: 88px;
+
+    background: rgba(70, 163, 88, 0.1);
+}
+
+.form_submit {
+    width: 365px;
+    height: 40px;
+    background: #FFFFFF;
+
+    .footer_input {
+        width: 270px;
+        height: 40px;
+        margin: 0px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+        border-radius: 6px;
+        border: none;
+
+    }
+
+    .button_submit {
+        width: 85px;
+        height: 40px;
+        margin: 0px;
+        background: #46A358;
+        border-radius: 0px 6px 6px 0px;
+        font-family: 'Cera Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+        color: #FFFFFF;
+        border: none;
+    }
+}
+
+.block_footer_3 {
+    display: flex;
+    justify-content: space-between;
+    background: #FBFBFB;
+    padding: 23px 33px;
+
+    .social_media {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_li {
+        list-style-type: none;
+    }
+
+    .Media {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+
+        .Media_item {
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgba(70, 163, 88, 0.2);
+            border-radius: 4px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.name_list {}
+
+.hr_footer {
+    background-color: rgba(70, 163, 88, 0.2);
+}
+
+.text_rights {
+    text-align: center;
+}

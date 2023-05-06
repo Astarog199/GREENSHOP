@@ -1,0 +1,102 @@
+.slider_pictures{
+    /* Задаём высоту и выстраиваем относительно */
+    height: 100vh;
+    position: relative; 
+    overflow: hidden;
+}
+
+.slider_pictures-item{
+    /* задаём высоту и позиционируем картинки поверх друг друга*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top: 0;
+    z-index: 1;
+}
+
+.slider_pictures-item img{
+    /* растягиваем картинку по размерам блока родителя */
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* делаем картинки по умолчанию скрытыми */
+.hidden-slide{
+    visibility: hidden;
+}
+
+/* стили иконки загрузки */
+.fas.fa-spinner.fa-spin{
+    font-size: 50px;
+    color: #bbb;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+}
+
+.slider-leftArrow,
+.slider-rightArrow {
+    position: absolute;
+    top: 47%;
+    z-index: 3;
+    color: #bbb;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+
+.slider-leftArrow{
+    left: 5%;
+}
+
+.slider-rightArrow{
+    right: 5%;
+}
+
+
+
+.banner {
+    width: 1200px;
+    height: 450px;
+    background-color: black;
+    border: 2px;
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+    margin-bottom: 45px;
+
+
+
+
+}
+.banner_ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_li {
+width: 8px;
+height: 8px;
+border-radius: 50%;
+cursor: pointer;
+background-color: rgba(70, 163, 88, 0.3);
+list-style-type: none;
+margin: 10px;
+ }
+
+
+.wrapped_banner {
+    width: 100%;
+    height: 100%;
+    background-image: url(/picture1.png);
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-position: right center;
+
+}
+        
+.banner_block_1 {
+    padding: 70px 40px;
+}

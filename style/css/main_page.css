@@ -1,0 +1,187 @@
+.close_div_Login {
+  margin-left: 470px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  background-color: white;
+  border: none;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.display_none {
+  display: none;
+}
+
+.display_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.div_Login {
+  margin-top: 160px;
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.div_Login .title_login {
+  margin-bottom: 55px;
+}
+
+.input_Log_mail {
+  width: 300px;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.input_Log_password {
+  width: 300px;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.Login_btn {
+  background: #46A358;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+  height: 45px;
+  margin-bottom: 45px;
+}
+
+.login_hr::after {
+  content: "Or login with";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+.wrapped_products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.categorie {
+  width: 310px;
+}
+
+.list_categories {
+  list-style-type: none;
+}
+.list_categories .categorie {
+  margin: 30px;
+}
+
+.products_catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 830px;
+}
+.products_catalog .product-item {
+  width: 258px;
+  height: 350px;
+}
+
+.card_pictures {
+  width: 250px;
+  height: 250px;
+  margin: 25px 4px;
+}
+
+.list_products {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.button_products {
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.dont {
+  background-image: url(../pictures/like.png);
+}
+
+.be {
+  background-image: url(../pictures/be_like.png);
+}
+
+.Super_Sale_Banner {
+  background-image: url(../pictures/Super_Sale_Banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 310px;
+  height: 470px;
+}
+
+.wrapped_group {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapped_group .item_group_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapped_group .line1_gr2 {
+  color: #46A358;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.wrapped_group .line3_gr2 {
+  color: #727272;
+  margin-bottom: 10px;
+}
+.wrapped_group .line4_gr2 {
+  color: black;
+  text-decoration: none;
+}
+.wrapped_group .line4_gr2::after {
+  margin-left: 5px;
+  content: url(../pictures/Arrow_Right.png);
+}

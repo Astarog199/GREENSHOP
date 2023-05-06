@@ -1,0 +1,130 @@
+@charset "UTF-8";
+.banner {
+  background-color: black;
+  border: 2px;
+  background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+  margin-bottom: 45px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner_ul {
+  margin-left: 580px;
+  position: absolute;
+  z-index: 3;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.banner_ul .banner_li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(70, 163, 88, 0.3);
+  list-style-type: none;
+  margin: 10px;
+}
+.banner_ul .banner_li_active {
+  background-color: green;
+}
+
+.slider_banner_block {
+  /* задаём высоту и позиционируем картинки поверх друг друга*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.image_banner_1 {
+  /* растягиваем картинку по размерам блока родителя */
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url(../pictures/picture1.png);
+}
+
+.image_banner_2 {
+  /* растягиваем картинку по размерам блока родителя */
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url(../pictures/catalog/2.png);
+}
+
+.image_banner_3 {
+  /* растягиваем картинку по размерам блока родителя */
+  width: 100%;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url(../pictures/catalog/3.png);
+}
+
+.wrapped_banner {
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 70px 40px;
+}
+
+.Planet {
+  color: #46A358;
+}
+
+.banner_but {
+  margin-top: 45px;
+  padding: 10px 25px;
+  text-decoration: none;
+  background: #46A358;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
+
+/* делаем картинки по умолчанию скрытыми */
+.hidden-slide {
+  visibility: hidden;
+}
+
+/* стили иконки загрузки */
+.fas.fa-spinner.fa-spin {
+  font-size: 50px;
+  color: #bbb;
+  position: absolute;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+}
+
+.slider-leftArrow,
+.slider-rightArrow {
+  position: absolute;
+  top: 47%;
+  z-index: 3;
+  color: #bbb;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.slider-leftArrow {
+  left: 5%;
+}
+
+.slider-rightArrow {
+  right: 5%;
+}

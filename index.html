@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenShop</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="style/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+<header class="header ">
+    <div class="wrapped_heder indent">
+        <p class="logo">GREENSHOP</p>
+
+        <ul class="list">
+            <li class="list_li"><a class="link p400" href="index.html">Home</a></li>
+            <li class="list_li"><a class="link p400" href="product_View.html">Shop</a></li>
+            <li class="list_li"><a class="link p400" href="#">Plant Care</a></li>
+            <li class="list_li"><a class="link p400" href="#">Blogs</a></li>
+        </ul>
+
+        <ul class="list rightHeader">
+            <li class="list_li search link">  <input class="input_search" type="search" placeholder="Find your plants"> <img src="style/pictures/search.png" alt="search"></li>
+            <li class="list_li basket_icon"> 
+            
+            <span class="basketIconWrap">
+                <a class="link" href="#"><img src="style/pictures/basket.png" alt="basket"></a>
+                <span class="shopping_counter" itemid="shopping_counter">0</span>
+            </span>
+
+
+            <div class="basket hidden">
+                <div class="basketRow basketHeader">
+                    <div>Фото товара</div>
+                    <div>Название товара</div>
+                    <div>Количество</div>
+                    <div>Цена за шт.</div>
+                    <div>Итого</div>
+                </div>
+            
+                <div class="basketTotal">
+                    Товаров в корзине на сумму:
+                    $<span class="basketTotalValue">0</span>
+                </div>
+            </div>
+            </li>
+            <li class="list_li "> <a class="logout link" href="#"><img src="style/pictures/logout.png" alt="logout"></a>
+            </li>
+        </ul>
+        <hr class="hr_header">   
+    </div>
+
+
+
+</header>
+        <div id="container_login" class="">
+            <div id="back" class=""></div>
+            <div class="div_Login display_none">
+                <button class="close_div_Login"><img src="style/pictures/close.png" alt=""></button>
+
+                <form id="form_login" action="#">
+
+                    <p class="p500_2 center title_login"> <span class="span_wrap">Login</span> | Register </p>
+                    <p class="p400">Enter your username and password to login.</p> <br>
+
+                    <input class="input_Log_mail" id="Log_mail" type="email" placeholder="almamun_uxui@outlook.com">
+                    <br>
+                    <input class="input_Log_password" id="Log_password" type="text" placeholder="введите пароль"> <br>
+
+                    <button class="Login_btn p700" id="Login"> Login </button><br>
+
+
+                    <hr class="login_hr">
+
+
+
+                    <button>Login with Google</button><br>
+                    <button>Login with Facebook</button><br>
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="content indent">
+
+            <div class="wrapped_content">
+
+                <!-- БАННЕР -->
+                <div class="banner" data-width="1200px" data-height="450px">
+                    <div class="slider">
+                        <div id="banner_1" class="slider_banner_block image_banner_1 hidden-slide">
+                            <div class="wrapped_banner">
+                                <p class="p500 text_uppercase">Welcome to GreenShop 1</p>
+                                <p class="p900 text_uppercase">Let’s&nbsp;Make a&nbsp;<br>
+                                    Better <span class="Planet">Planet</span> </p>
+                                <p style="margin-bottom: 45px;" class="p400_2">We&nbsp;are an&nbsp;online plant shop
+                                    offering a&nbsp;wide range
+                                    of&nbsp;cheap and trendy plants. Use <br> our plants to&nbsp;create an&nbsp;unique
+                                    Urban
+                                    Jungle. Order your favorite plants!</p>
+                                <a class="banner_but p500" href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+
+                        <div id="banner_2" class="slider_banner_block image_banner_2 hidden-slide">
+                            <div class="wrapped_banner">
+                                <p class="p500 text_uppercase">Welcome to GreenShop 2</p>
+                                <p class="p900 text_uppercase">Let’s&nbsp;Make a&nbsp;<br> Better <span
+                                        class="Planet">Planet</span> </p>
+                                <p style="margin-bottom: 45px;" class="p400_2">We&nbsp;are an&nbsp;online plant shop
+                                    offering a&nbsp;wide range
+                                    of&nbsp;cheap and trendy plants. Use <br> our plants to&nbsp;create an&nbsp;unique
+                                    Urban
+                                    Jungle. Order your favorite plants!</p>
+                                <a class="banner_but p500" href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+
+                        <div id="banner_3" class="slider_banner_block image_banner_3 hidden-slide">
+                            <div class="wrapped_banner">
+                                <p class="p500 text_uppercase">Welcome to GreenShop 3</p>
+                                <p class="p900 text_uppercase">Let’s&nbsp;Make a&nbsp;<br> Better <span
+                                        class="Planet">Planet</span> </p>
+                                <p style="margin-bottom: 45px;" class="p400_2">We&nbsp;are an&nbsp;online plant shop
+                                    offering a&nbsp;wide range
+                                    of&nbsp;cheap and trendy plants. Use <br> our plants to&nbsp;create an&nbsp;unique
+                                    Urban
+                                    Jungle. Order your favorite plants!</p>
+                                <a class="banner_but p500" href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ul class="banner_ul">
+                        <li id="banner_li_1" class="banner_li banner_li_active"></li>
+                        <li id="banner_li_2" class="banner_li"></li>
+                        <li id="banner_li_3" class="banner_li"></li>
+                    </ul>
+                </div>
+
+                <!-- Каталог товаров -->
+                <div class="wrapped_products">
+                    <div class="Filter">
+                        <div class="categories">
+                            <p class="p700">Categories</p>
+                            <ul class="list_categories">
+                                <li class="categorie">House plants</li>
+                                <li class="categorie">Ponner Plants</li>
+                                <li class="categorie">Seeds</li>
+                                <li class="categorie">Small Plants</li>
+                                <li class="categorie">Big Plants</li>
+                                <li class="categorie">Succulents</li>
+                                <li class="categorie">Trerrariums</li>
+                                <li class="categorie">Gardening</li>
+                                <li class="categorie">Accessories</li>
+                            </ul>
+                        </div>
+                        <div class="Filter-price">
+<div class='wrap' role='group' aria-labelledby='multi-lbl' style='--a: 0; --b: 1000; --min: 0; --max: 1000'>
+    <div id='multi-lbl'>
+        <p>Price Range</p>
+    </div>
+    <label class='sr-only' for='from'>Value A:</label>
+    <input id='from' type='range' min='0' value='0' max='1000' />
+    <output style='--c: var(--from)'></output>
+    <label class='sr-only' for='b'>Value B:</label>
+    <input id='to' type='range' min='0' value='1000' max='1000' />
+    <output for='до' style='--c: var(--to)'></output>                        </div>
+                        <!-- Фильтр товаров -->
+                    </div>
+
+                    <nav>
+                        <p>Size</p>
+                        <ul class="menu">
+                            <li class="menu_list">Small</li>
+                            <li class="menu_list">Medium</li>
+                            <li class="menu_list">large</li>
+                        </ul>
+                    </nav>
+
+                    <div class="Super_Sale_Banner"></div>
+
+                </div>
+
+
+                <div class="products_catalog">
+                    <!-- Каталог товаров -->
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapped_group">
+            <div class="item_group_1">
+                <img src="./style/pictures/catalog/5.png" alt="">
+                <div>
+                    <h1 class="p700_2"> summer cactus <br> & succulents </h1>
+                    <p>We are an online shop offering a wide <br>
+                        range of cheap and trendy plants</p>
+                    <button> Find more</button>
+                </div>
+            </div>
+
+            <div class="item_group_1">
+                <img src="./style/pictures/catalog/3.png" alt="">
+                <div>
+                    <h1 class="p700_2"> summer cactus <br> & succulents </h1>
+                    <p>We are an online shop offering a wide <br>
+                        range of cheap and trendy plants</p>
+                    <button> Find more</button>
+                </div>
+            </div>
+        </div>
+
+
+        <h1>Our Blog Posts</h1>
+        <p>We are an online plant shop offering a wide range of cheap and trendy plants. </p>
+        <div class="wrapped_group">
+            <div>
+                <img src="./style/pictures/01.png" alt="">
+                <p class=" p500 line1_gr2">September 12 I Read in 6 minutes</p>
+                <h1 class="p700_2 line2_gr2">Cactus & Succulent <br> Care Tips</h1>
+                <p class="p400_3 line3_gr2">Cacti are succulents are easy care <br> plants for any home
+                    or&nbsp;patio. </p>
+                <a class="line4_gr2" href="#">Read More</a>
+            </div>
+            <div>
+                <img src="./style/pictures/02.png" alt="">
+                <p class=" p500 line1_gr2">September 13 I Read in 2 minutes</p>
+                <h1 class="p700_2 line2_gr2">Top 10 Succulents for <br> Your Home</h1>
+                <p class="p400_3 line3_gr2"> Best in&nbsp;hanging baskets. Prefers <br> medium to&nbsp;high light.
+                </p>
+                <a class="line4_gr2" href="#">Read More</a>
+            </div>
+            <div>
+                <img src="./style/pictures/03.png" alt="">
+                <p class=" p500 line1_gr2">September 15 I Read in 3 minutes</p>
+                <h1 class="p700_2 line2_gr2"> Cacti & Succulent <br> Care Tips</h1>
+                <p class="p400_3 line3_gr2">Cacti and succulents thrive in&nbsp;<br> containers and because most
+                    are.</p>
+                <a class="line4_gr2" href="#">Read More</a>
+            </div>
+            <div>
+                <img src="./style/pictures/04.png" alt="">
+                <p class=" p500 line1_gr2">September 15 I Read in 2 minutes</p>
+                <h1 class="p700_2 line2_gr2">
+                    Best Houseplants <br> Room by Room
+                </h1>
+                <p class="p400_3 line3_gr2">The benefits of&nbsp;houseplants are <br> endless. In&nbsp;addition to.
+                </p>
+                <a class="line4_gr2" href="#">Read More</a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+<footer class="footer">
+    <div class="wrapped_footer indent">
+        <div class="block_footer_1">
+            <div class="block_fot_item">
+                <img class="img_fot" src="style/pictures/fot_picture2.png" alt="plant">
+                <b class="p700">Garden Care</b>
+                <p class="p400_3 bf1_parahraph">We are an online plant shop <br>
+                    offering a wide range of cheap <br>
+                    and trendy plants.</p>
+            </div>
+            <div class="block_fot_item">
+                <img class="img_fot" src="style/pictures/fot_picture2.png" alt="plant">
+                <b class="p700">Garden Care</b>
+                <p class="p400_3 bf1_parahraph">We are an online plant shop <br>
+                    offering a wide range of cheap <br>
+                    and trendy plants.</p>
+            </div>
+            <div class="block_fot_item">
+                <img class="img_fot" src="style/pictures/fot_picture3.png" alt="plant">
+                <b class="p700">Garden Care</b>
+                <p class="p400_3 bf1_parahraph">We are an online plant shop <br>
+                    offering a wide range of cheap <br>
+                    and trendy plants.</p>
+            </div>
+            <div class="block_fot_item2">
+                <b class="p700">Would you like to join newsletters?</b> <br>
+                <form class="form_submit" action="#">
+                    <input class="footer_input" type="text" placeholder="enter your email address...">
+                    <button class="button_submit" type="submit"> join </button>
+                </form>
+                <p class="p400_3 bf2_parahraph">We&nbsp;usually post offers and challenges in&nbsp;newsletter.
+                    We’re
+                    <br>
+                    your online houseplant destination. We&nbsp;offer a&nbsp;wide range <br>
+                    of&nbsp;houseplants and accessories shipped directly from our <br>
+                    (green)house to&nbsp;yours!
+                </p>
+            </div>
+        </div>
+        <div class="block_footer_2">
+            <p class="logo">GREENSHOP</p>
+
+            <p class="contact">70 West Buckingham Ave.<br />
+                Farmingdale, NY&nbsp;11735</p>
+
+            <p class="contact">contact@greenshop.com</p>
+            <p class="contact">+88 01911 717 490</p>
+        </div>
+
+        <div class="block_footer_3">
+            <ul class="footer_list1 ">
+                <b class="name_list p700">My Account</b>
+                <li class="footer_li p400_30">My Account</li>
+                <li class="footer_li p400_30">Our stores</li>
+                <li class="footer_li p400_30">Contact us</li>
+                <li class="footer_li p400_30">Career</li>
+                <li class="footer_li p400_30">Specials</li>
+            </ul>
+            <ul class="footer_list2 p700">
+                <b class="name_list p700">Help & Guide</b>
+                <li class="footer_li p400_30">Help Center</li>
+                <li class="footer_li p400_30"> How to Buy</li>
+                <li class="footer_li p400_30">Shipping & Delivery</li>
+                <li class="footer_li p400_30">Product Policy</li>
+                <li class="footer_li p400_30">How to Return</li>
+            </ul>
+            <ul class="footer_list3 p700">
+                <b class="name_list p700">Categories</b>
+                <li class="footer_li p400_30">House Plants</li>
+                <li class="footer_li p400_30">Potter Plants</li>
+                <li class="footer_li p400_30">Seeds</li>
+                <li class="footer_li p400_30">Small Plants</li>
+                <li class="footer_li p400_30">Accessories</li>
+            </ul>
+
+            <div class="social_media">
+                <p>Social Media</p> <br>
+                <ul class="Media">
+                    <li class="Media_item"><a href="#"><img src="style/pictures/Media/Facebook.png" alt="Facebook"></a>
+                    </li>
+                    <li class="Media_item"><a href="#"><img src="style/pictures/Media/Instagram.png"
+                                alt="Instagram"></a></li>
+                    <li class="Media_item"><a href="#"><img src="style/pictures/Media/Twitter.png" alt="Twitter"></a>
+                    </li>
+                    <li class="Media_item"><a href="#"><img src="style/pictures/Media/Linkedin.png" alt="Linkedin"></a>
+                    </li>
+                    <li class="Media_item"><a href="#"><img src="style/pictures/Media/Union.png" alt="Union"></a></li>
+                </ul>
+                <p>We accept</p>
+                <img src="style/pictures/visa.png" alt="visa">
+            </div>
+        </div>
+        <hr class="hr_footer">
+        <p class="text_rights">© 2021 GreenShop. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <!--    формирование каталога   -->
+    <script src="./js/productDTO.js"></script>
+
+    <!--    массив с товаром  -->
+    <script src="./js/products.js"></script>
+
+    <!--    добавление карточки товара в HTML -->
+    <script src="./js/productCards.js"></script>
+
+    <!-- корзина товаров -->
+    <script src="./js/basket.js"></script>
+
+    <!-- сортировка по цене -->
+    <script src="./js/sortPrice.js"></script>
+
+    <!-- скрипты  -->
+    <script src="./js/app.js"></script>
+
+    <!-- Авторизация  -->
+    <script src="./js/login.js"></script>
+
+    <!-- Лайки -->
+    <script src="./js/likes.js"></script>
+
+    <script src="./js/banner.js"></script>
+
+
+</body>
+
+</html>

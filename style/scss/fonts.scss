@@ -1,0 +1,96 @@
+.logo {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #46A358;
+
+    &::before {
+        content: url(../pictures/logo.png);
+        vertical-align: middle;
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+}
+
+.span_wrap{
+    color: #46A358;
+}
+
+.center{
+    text-align: center;
+}
+
+.p400 {
+    font-family: 'Cera Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.p400_3 {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.p400_2 {
+    font-family: 'Cera Pro';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.p400_30 {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+
+.p500 {
+    font-family: 'Cera Pro';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.p500_2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 16px;
+}
+
+.p700 {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.p700_2 {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #3D3D3D;
+}
+
+.p900 {
+    font-family: 'Cera Pro';
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.text_uppercase {
+    text-transform: uppercase;
+}
